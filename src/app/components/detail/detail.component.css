@@ -1,0 +1,100 @@
+.container {
+	display: flex;
+	justify-content: space-between;
+	height: 100%;
+	padding: 5%;
+}
+
+.data_project,
+.image {
+	height: 100%;
+}
+
+.data_project {
+	width: 50%;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+.data_project > * {
+	width: 100%;
+	text-align: center;
+}
+
+.data_project label {
+	margin-top: 20px;
+}
+
+.data_project h1 {
+	font-size: 60px;
+}
+
+.data_project p {
+	font-size: 28px;
+}
+
+.image {
+	width: 50%;
+	display: flex;
+	align-items: center;
+}
+
+.image img {
+	width: 100%;
+	height: auto;
+	border-radius: 15px;
+	padding: 10px;
+  	box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+.data_project .botonera,
+.data_project .botonera-eliminar {
+	margin-top: 50px;
+}
+
+.data_project .btn-edit,
+.data_project .btn-delete {
+	font-size: 18px;
+	padding: 5px 15px;
+	margin-top: 15px;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.data_project .btn-edit {
+	background-color: rgb(243, 145, 19);
+	margin-right: 20px;
+}
+
+.data_project .btn-edit:hover {
+	background-color: rgba(243, 145, 19, 0.7);
+}
+
+.data_project .btn-delete {
+	background-color: rgb(243, 19, 36);
+	margin-left: 20px;
+}
+
+.data_project .btn-delete:hover {
+	background-color: rgba(243, 19, 36, 0.7);
+}
+
+.data_project .botonera-eliminar p {
+	color: red;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.modal-imagen {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+}

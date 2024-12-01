@@ -1,0 +1,87 @@
+.container {
+	padding: 10px 50px;
+}
+
+.container h2 {
+	border-bottom: 2px solid #ccc;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+	font-size: 23px;
+}
+
+.container form {
+	width: 50%;
+}
+
+.container form div label {
+	font-size: 20px;
+}
+
+.container form div input,
+.container form div textarea {
+	width: 100%;
+	margin-bottom: 25px;
+}
+
+.container form div input[type="text"] {
+	padding: 10px 15px;
+}
+
+.container form div input[type="text"],
+.container form div textarea {
+	/*border: 3px solid  #b95af7;*/
+	border-radius: 10px;
+	background-color: rgba(192, 230, 255 , 0.5);
+	border: none;
+}
+
+.container form input[type="submit"] {
+	font-size: 18px;
+	padding: 5px 15px;
+	margin-top: 15px;
+	color: white;
+	background-color: rgb(53, 103, 164);
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.container form input[type="submit"]:hover {
+	background-color: rgba(53, 103, 164, 0.8);
+}
+
+.container form input[disabled] {
+	background-color: #ccc;
+	cursor: no-drop;
+}
+
+.container form span {
+	border: 3px solid red;
+	width: 100%;
+	display: block;
+	padding: 5px 0;
+	text-align: center;
+	color: red;
+	background: pink;
+	margin-bottom: 20px;
+}
+
+.message {
+	width: 50%;
+	padding: 5px;
+	border: 1px solid #eee;
+}
+
+.success {
+	background-color: green;
+	color: white;
+}
+
+.success a {
+	color: white;
+}
+
+.failed {
+	background-color: red;
+	color: white;
+}

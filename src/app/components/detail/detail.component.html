@@ -1,0 +1,30 @@
+<div class="container" *ngIf="data">
+	<div class="data_project">
+		<label>Nombre:</label>
+		<h1>{{data.name}}</h1>
+		<label>Categoria:</label>
+		<p>{{data.category}}</p>
+		<label>Descripción:</label>
+		<p>{{data.description}}</p>
+		<label>Lenguajes:</label>
+		<p>{{data.langs}}</p>
+		<label>Año:</label>
+		<p>{{data.year}}</p>
+
+		<div class="botonera" *ngIf="confirm == false">
+			<a class="btn-edit" [routerLink]="['/editar', data._id]">Editar</a>
+			<!--<a (click)="onEdit(data._id)" class="btn-edit">Editar</a>-->
+			<a class="btn-delete" (click)="confirmation(true)">Borrar</a>
+		</div>
+
+		<div class="botonera-eliminar" *ngIf="confirm == true">
+			<p>¿Estas seguro de eliminar este proyecto?</p>
+			<a (click)="confirmation(false)" class="btn-edit">Cancelar</a>
+			<a class="btn-delete" (click)="deleteProject(data._id)">Eliminar</a>
+		</div>
+	</div>
+
+	<div class="image">
+		<img #imagen src="{{url+'/get-image/'+data.image}}" alt="" (click)="modalImagen()">
+	</div>
+</div>

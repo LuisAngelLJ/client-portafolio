@@ -1,0 +1,112 @@
+@font-face {
+	font-family: "yanone";
+	src: url('../fonts/YanoneKaffeesatz-Light.ttf');
+}
+
+@font-face {
+	font-family: "titilium";
+	src: url('../fonts/TitilliumWeb-Light.ttf');
+}
+
+@font-face {
+	font-family: "finger";
+	src: url('../fonts/FingerPaint-Regular.ttf');
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "yanone", Arial, Helvetica;
+	background-image: url('../images/background.jpg');
+	background-attachment: fixed;
+}
+
+.clearfix {
+	float: none;
+	clear: both;
+}
+
+header {
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 65px;
+	background-color: rgba(109, 109, 109, 0.9);
+	text-transform: uppercase;
+}
+
+header ul {
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+	width: 750px;
+	height: inherit;
+	margin: 0 auto;
+}
+
+header ul li {
+	margin: 0 auto;
+	text-align: center;
+	height: 100%;
+	list-style: none;
+}
+
+header a {
+	display: block;
+	height: 100%;
+	padding: 0 20px;
+	text-decoration: none;
+	color: white;
+}
+
+header a:hover {
+	background-color: rgba(225, 225, 225, 0.8);
+	color: black;
+}
+
+header .logo a {
+	font-family: "finger";
+	font-size: 25px;
+	transition: color 500ms, transform 500ms;
+}
+
+header .logo a:hover {
+	background-color: transparent;
+	color: #b7b5b5;
+	transform: scale(1.1);
+}
+
+.active {
+	background-color: rgba(225, 225, 225, 0.8);
+	color: black;
+}
+
+#main {
+	width: 100%;
+	position: fixed;
+	height: calc(100% - 90px);
+	top: 65px;
+	padding: 10px 0;
+}
+
+#content {
+	width: 75%;
+	height: 95%;
+	margin: 0px auto;
+	box-shadow: 0 0 40px black;
+	background-color: rgba(225, 225, 225, 0.7);
+	/*background-color: white;*/
+	overflow-y: scroll;
+}
+
+footer {
+	width: 100%;
+	height: 25px;
+	background-color: orange;
+	position: fixed;
+	bottom: 0;
+}
